@@ -121,7 +121,7 @@ function App() {
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const searchRef = useRef<HTMLDivElement>(null);
 
-  const API_KEY = 'Enter-Your-API-Key';
+  const API_KEY = '2c7232e8262270c3d34e0eda4f6a45d1';
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
