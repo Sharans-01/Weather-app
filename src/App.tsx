@@ -24,6 +24,8 @@ interface WeatherData {
   }>;
 }
 
+
+
 const popularCities = [
   'London', 'New York', 'Tokyo', 'Paris', 'Dubai',
   'Singapore', 'Barcelona', 'Rome', 'Sydney', 'Hong Kong',
@@ -121,7 +123,9 @@ function App() {
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const searchRef = useRef<HTMLDivElement>(null);
 
-  const API_KEY = '2c7232e8262270c3d34e0eda4f6a45d1';
+  
+
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
